@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> sign in page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      background-image: url(image/f1.jpg);
+      background-size: cover;
+      font-family: 'Georgia', serif;
+      color: orange;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      position: relative;
+    }
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 50px;
+      font-weight: 400;
+      text-transform: lowercase;
+      color: white;
+      letter-spacing: 1px;
+      color: orange;
+    }
+    .logo #gif{
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      object-fit: cover;
+
+    }
+    #frame{
+      color:white;
+      background-color: rgb(255, 170, 12);
+      font-size: 20px;
+      font-weight: 400px;
+      letter-spacing: 1px;
+      width: 100%;
+      height: 50%;
+      border-radius: 15px;
+      font-family: Georgia, serif;
+      margin-top: 15px;
+      
+    }
+    #frame input{
+    background-color: white;
+    width: 200px;
+    border-radius: 10px;
+    height: 30px;
+    border:none;
+    text-align: center;
+    
+    }
+    #frame button{
+      border-radius: 20px;
+      background: white;
+      color: orange;
+      padding-top: 8px;
+    }
+
+
+    #frame button a{
+      text-decoration: none;
+      color: white;
+      margin-bottom: auto;
+      
+    }
+
+    #frame button:hover {
+      background-color: orange;
+      color: white;
+      transform: translateY(-2px);
+      
+    }
+
+    #frame button:hover a{
+      color: white;
+      
+    }
+
+    
+
+    
+
+
+
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      line-height: 1.4;
+    }
+
+    p {
+      font-size: 16px;
+      margin-bottom: 30px;
+      line-height: 1.6;
+      max-width: 320px;
+    }
+
+    button {
+      padding: 12px 35px;
+      font-size: 16px;
+      font-weight: bold;
+      background-color: orange;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: white;
+      transform: translateY(-2px);
+      color: orange;
+    }
+
+    button:active {
+      transform: translateY(0);
+    }
+
+    @media (min-width: 600px) {
+      body {
+        max-width: 450px;
+        margin: auto;
+      }
+      
+      h1 {
+        font-size: 28px;
+      }
+      
+      p {
+        font-size: 17px;
+        max-width: 380px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="logo"><img src="image/fnanco.jpeg" alt="" id="gif">fnanco</div><br><br><br><br>
+
+  <h1>sign up form</h1>
+  
+  
+    <fieldset id="frame">
+    <form action="home.html" id="f">
+
+      <br>
+
+      <div>
+        <label for="name">Name:</label>
+        <input type="text"  id="name"     required><br><br><br>
+
+      </div>
+
+      <div>
+        <label for="email">Email:</label>
+        <input type="email"  id="email" required><br><br><br>
+
+      </div>
+
+
+      <div>
+        <label for="password">password:</label>
+        <input type="password" id="password" required><br><br>
+      </div>
+    
+      <button type="submit" >submit</button>
+    </form><br>
+
+
+    
+    </fieldset>
+  <button onclick="window.location.href='login in.html'">login in</button>
+  
+
+  <script>
+    // You can add JavaScript functionality here later
+    document.querySelector('button').addEventListener('click', function() {
+      // Add any animation or transition before moving to the next page
+    });
+  </script>
+</body>
+</html>
